@@ -1,4 +1,4 @@
 https://codepen.io/ - For coding Frontend
-https://devdocs.io/ , mdn - For documentation
+https://devdocs.io/ , https://developer.mozilla.org/en-US/docs/Web (mdn) - For documentation
 https://web.archive.org/ - just a website for how websites change over years
 https://docs.emmet.io/cheat-sheet/ - For emmets
