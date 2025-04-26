@@ -4,3 +4,4 @@ https://web.archive.org/ - just a website for how websites change over years
 https://docs.emmet.io/cheat-sheet/ - For emmets
 https://github.com/angelabauer/cv  - For Personal site of angela yu
 https://angelabauer.github.io/cv - For Personal site of angela yu
+https://colorhunt.co/ - For color designs
