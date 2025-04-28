@@ -1,0 +1,19 @@
+body {
+    background-color: #EAF6F6;   /* F6F1DE */
+}
+
+h1, h3 {
+    color: #66BFBF;   /* 8AB2A6 */
+}
+
+/* 
+    - hr is just a rectangle with 4 sides covered with border, border style inset.
+    - Then border top is set to dotted and remaining 3 sides are set to none.
+    - height 0px means it top border is directly touching bottom border.
+*/
+hr {
+    border-color: rgb(119, 136, 153);
+    border-style: dotted none none;     /* border-top-style: dotted; */
+    border-width: 5px;
+    width: 5%;                          /* height: 0px; is a default value. */
+}

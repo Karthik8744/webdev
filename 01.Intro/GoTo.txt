@@ -5,3 +5,4 @@ https://docs.emmet.io/cheat-sheet/ - For emmets
 https://github.com/angelabauer/cv  - For Personal site of angela yu
 https://angelabauer.github.io/cv - For Personal site of angela yu
 https://colorhunt.co/ - For color designs
+in chrome more tools -> Developer tools -> console for debugging
