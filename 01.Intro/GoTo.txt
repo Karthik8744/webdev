@@ -12,3 +12,8 @@ https://www.favicon.cc/?  -> to create icons
 https://www.w3schools.com/cssref/pr_class_float.php  - > learn about this property
 https://css3buttongenerator.com/ - For button generator
 https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3 -> challenge on html, css
+https://fonts.google.com/ - For fonts
+
+https://getbootstrap.com/  - For bootstrap
+https://ui-patterns.com/  - For UI patterns
+https://fontawesome.com/  - For icons
