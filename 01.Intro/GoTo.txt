@@ -17,3 +17,4 @@ https://fonts.google.com/ - For fonts
 https://getbootstrap.com/  - For bootstrap
 https://ui-patterns.com/  - For UI patterns
 https://fontawesome.com/  - For icons
+https://bootsnipp.com/  - For readymade bootstrap elements(like pricing, login, signup)
