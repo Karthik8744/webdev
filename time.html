@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Coder’s Study Timetable and Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        #myChart {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .emoji {
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center">
+    <!-- Chart Section -->
+    <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center">Pirate Coder’s Mission Chart (May 24 - June 27, 2025)</h1>
+    <canvas id="myChart" class="mb-8"></canvas>
+
+    <!-- Timetable Section -->
+    <div class="max-w-4xl w-full bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-4">Pirate Coder’s Scroll: Knowledge Voyage Timetable (May 24 - June 27, 2025)</h1>
+        <p class="text-gray-700 mb-6 text-center">
+            This legendary scroll charts your voyage to conquer the seas of coding and logic, divided into five grand sagas from May 24 to June 27, 2025. Each saga unfolds through daily arcs, with missions to master 
+            <span class="text-[#cc0000]"><span class="emoji">🗡️</span> Java</span>, 
+            <span class="text-[#0066cc]"><span class="emoji">⚓</span> Web Development</span>, 
+            <span class="text-[#00cc33]"><span class="emoji">🦜</span> Python</span>, and 
+            <span class="text-[#e6b300]"><span class="emoji">💰</span> Logic</span>. 
+            Levels (1, 2, 3) represent Rookie, Navigator, and Warlord stages of mastery. The Final Assessment on June 27 will challenge your might across all seas. Set sail, pirate coder!
+        </p>
+
+        <!-- Saga 1: Codebreaker Saga -->
+        <section class="mb-8">
+            <h2 class="text-xl md:text-2xl font-bold text-center text-gray-800">Saga of 1: Codebreaker Saga (May 24 - May 31, 2025)</h2>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Starlight Web: May 24, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 26, 27, 28</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Crestwave Java: May 25, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 29, 30, 31</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Introduction (Rookie)</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Datatypes/IO (Rookie, Navigator)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Number Systems</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Blazewind Logic: May 26, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 32, 33, 34</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Operators and Expressions (Rookie, Navigator)</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Conditional Statements (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Ratio and Proportion</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Shadowloop: May 27, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 35, 36, 37</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Looping Statements (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Arrays - 1D (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Averages and Ages</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Stringhaven: May 28, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 38, 39, 40</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Arrays - 2D (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Strings (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Percentages - Simple and Compound Interest</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Object Isle: May 29, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 41, 42, 43</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Class and Objects (Rookie, Navigator)</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Class and Object (Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Profit and Loss</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Inheritance Cove: May 30, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 44, 45, 46</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Inheritance (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Polymorphism (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><опа></strong>: Mixtures and Alligations</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Treasure Code: May 31, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 47, 48, 49</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Abstract Class and Interface (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Collections (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Time, Speed, and Distance</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Saga 2: Cyberwave Saga -->
+        <section class="my-8">
+            <h2 class="text-xl md:text-2xl font-bold text-center text-gray-800">Saga of 2: Cyberwave Saga (June 1 - June 7, 2025)</h2>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Lambda Storm: June 1, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 50, 51, 52</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Lambda Expression (Rookie)</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Exception Handling (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Boats and Streams</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Threadtide: June 2, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 53, 54, 55</li>
+                    <li><strong>Mission <span class="text-[#cc0000]"><span class="emoji">🗡️</span></strong>: Multithreading (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Time and Work</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Progression Reef: June 3, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 56, 57, 58</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Progression</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Pipeflow: June 4, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 59, 60, 61</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Pipes and Cisterns</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Mensuration Bay: June 5, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 62, 63, 64</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Mensuration</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Python Dawn: June 6, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 65, 66, 67</li>
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Introduction - Basics (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Iterative Statements (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Geometry</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Function Cove: June 7, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#0066cc]"><span class="emoji">⚓</span></strong>: Web Development Scrolls 68, 69, 70</li>
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Conditional Statements (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Functions (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Permutation and Combination</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Saga 3: Serpent Code Saga -->
+        <section class="my-8">
+            <h2 class="text-xl md:text-2xl font-bold text-center text-gray-800">Saga of 3: Serpent Code Saga (June 8 - June 14, 2025)</h2>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of List Tides: June 8, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Lists (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Strings (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Probability</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Tuple Oasis: June 9, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: List and Tuple (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Set and Dictionary (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Reading Comprehension</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Object Fortress: June 10, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Classes and Objects (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Inheritance and Polymorphism (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Sentence Correction</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of File Tempest: June 11, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: File Handling (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Exception Handling (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Sentence Completion</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Thread Spire: June 12, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#00cc33]"><span class="emoji">🦜</span></strong>: Multithreading (Rookie, Navigator, Warlord)</li>
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Parajumbles</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Preposition Pier: June 13, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Articles and Prepositions</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Vocabulary Vault: June 14, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Vocabulary</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Saga 4: Mindsea Saga -->
+        <section class="my-8">
+            <h2 class="text-xl md:text-2xl font-bold text-center text-gray-800">Saga of 4: Mindsea Saga (June 15 - June 21, 2025)</h2>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Speech Haven: June 15, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Voices and Speech</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Vision Vortex: June 16, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Visual Reasoning</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Syllogism Strait: June 17, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Syllogism</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Codebreaker Cove: June 18, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Coding and Decoding</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Direction Depths: June 19, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Directions</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Arrangement Atoll: June 20, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Seating Arrangement</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Bloodline Bay: June 21, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Blood Relation</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Saga 5: Final Trial Saga -->
+        <section class="my-8">
+            <h2 class="text-xl md:text-2xl font-bold text-center text-gray-800">Saga of 5: Final Trial Saga (June 22 - June 27, 2025)</h2>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Clockwork Coast: June 22, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Clocks and Calendars</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Series Shoal: June 23, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Series</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Sufficiency Summit: June 24, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Data Sufficiency</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Interpretation Isle: June 25, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Data Interpretation</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Cube Citadel: June 26, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Cubes and Dices</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Arc of Grand Assessment: June 27, 2025</h3>
+                <ul class="list-none ml-4">
+                    <li><strong>Mission <span class="text-[#e6b300]"><span class="emoji">💰</span></strong>: Final Assessment</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Navigator’s Notes -->
+        <section class="mt-8">
+            <h2 class="text-xl md:text-2xl font-bold text-center text-gray-800">Navigator’s Notes</h2>
+            <ul class="list-disc ml-6 text-gray-700">
+                <li><strong>Levels (Rookie, Navigator, Warlord):</strong> Beginner, Intermediate, Advanced.</li>
+                <li><strong>Strategy:</strong> Conquer daily missions for steady progress.</li>
+                <li><strong>Final Assessment:</strong> On June 27, face the ultimate trial covering all seas.</li>
+            </ul>
+        </section>
+
+        <!-- Closing Encouragement -->
+        <div class="text-center mt-6">
+            <p class="text-lg font-bold text-gray-800">Set sail on this epic voyage, pirate coder, and claim your title as a master of code and logic!</p>
+        </div>
+    </div>
+
+    <!-- Chart.js Script -->
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Codebreaker Saga (May 24-31)', 'Cyberwave Saga (Jun 1-7)', 'Serpent Code Saga (Jun 8-14)', 'Mindsea Saga (Jun 15-21)', 'Final Trial Saga (Jun 22-27)'],
+                datasets: [
+                    {
+                        label: 'Web Development ⚓',
+                        data: [24, 21, 0, 0, 0],
+                        backgroundColor: 'rgba(0, 102, 204, 0.8)',
+                        borderColor: 'rgba(0, 102, 204, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Java 🗡️',
+                        data: [14, 3, 0, 0, 0],
+                        backgroundColor: 'rgba(204, 0, 0, 0.8)',
+                        borderColor: 'rgba(204, 0, 0, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Python 🦜',
+                        data: [0, 4, 10, 0, 0],
+                        backgroundColor: 'rgba(0, 204, 51, 0.8)',
+                        borderColor: 'rgba(0, 204, 51, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Logic 💰',
+                        data: [8, 7, 7, 7, 6],
+                        backgroundColor: 'rgba(230, 179, 0, 0.8)',
+                        borderColor: 'rgba(230, 179, 0, 1)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    tooltip: {
+                        enabled: true
+                    },
+                    title: {
+                        display: true,
+                        text: 'Missions by Subject Across Sagas',
+                        font: {
+                            size: 16
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        stacked: false,
+                        title: {
+                            display: true,
+                            text: 'Sagas'
+                        }
+                    },
+                    y: {
+                        stacked: false,
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Number of Missions'
+                        },
+                        ticks: {
+                            stepSize: 5
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>=
